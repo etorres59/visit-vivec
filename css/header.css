@@ -1,0 +1,169 @@
+  /*
+Evan Torres
+Seminole State 
+COP 2381 Advanced Javascript
+Rebekah Gabel
+*/
+
+
+  * {
+    box-sizing: border-box;
+  }
+
+
+  .wrapper {
+    text-align: center;
+    font-family: "Uncial Antiqua", system-ui;
+  }
+
+  header {
+    background-color: #1e1e1e;
+    padding-top: env(safe-area-inset-top);
+  }
+
+  header img {
+    padding-top: 20px;
+    cursor: pointer;
+    max-width: 100px;
+    height: auto;
+  }
+
+  header h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #d4AF37;
+    margin: 0;
+    padding: 10px 0;
+    cursor: pointer;
+    font-size: clamp(1rem, 5vw, 3rem);
+  }
+
+  nav {
+    text-align: center;
+    font-family: "IM Fell English SC", serif;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #1e1e1e;
+    padding: 10px 0;
+  }
+
+  .menubar,
+  .menubar li {
+    display: inline;
+    border-bottom: 2px solid #d4AF37;
+  }
+
+  .menubar ul {
+    padding-inline-start: 0;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #8C7835;
+    padding: 10px 15px;
+    display: inline-block;
+  }
+
+  nav a:hover,
+  nav a:visited:hover {
+    color: #1e1e1e;
+  }
+
+  .navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .navbar-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .paypalCartButton {
+    text-align: left;
+  }
+
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    /* Centers the items horizontally */
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 10px;
+    margin: 0 auto;
+    /* Horizontally center the container */
+    padding: 0;
+  }
+
+  .nav-links li a {
+    color: #f5f5dc;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .hamburger {
+    display: none;
+    font-size: 26px;
+    background: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+
+
+
+  /* Responsive styles */
+  @media (max-width: 768px) {
+
+
+    .nav-links {
+      background: #1e1e1e;
+      width: 100%;
+      margin-top: 10px;
+      display: none;
+      /* Hide nav by default on small screens */
+      flex-direction: column;
+      width: 100%;
+
+    }
+
+    .nav-links li a {
+      margin: auto;
+    }
+
+
+    .nav-links.active {
+      display: flex;
+    }
+
+
+    .hamburger {
+      display: block;
+    }
+
+  }
+
+  /* Small desktops and laptops (≥1024px) */
+  @media (min-width: 769px) {
+    .menubar li {
+      border-bottom: none;
+    }
+
+    .navbar {
+      background-color: #8c7835;
+    }
+  }
+
+  @media (min-width: 1024px) {}
+
+  /* Large desktops (≥1280px) */
+  @media (min-width: 1280px) {}

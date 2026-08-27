@@ -1,0 +1,298 @@
+<!-- 
+Evan Torres
+Seminole State 
+COP 2381 Advanced Javascript
+Rebekah Gabel 
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale= 1.0" />
+    <meta name="description" content="A jQuery Glossary to demonstrate my understand of the following concepts." />
+    <meta name="keywords" content="Elder Scrolls, Morrowind, Vivec, City, VisitVivec, TES, TES3, jQuery, javascript" />
+    <meta name="author" content="Evan Torres" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Visit Vivec</title>
+    <link rel="stylesheet" type="text/css" href="css/header.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/footer.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Uncial+Antiqua&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <h1 a href="index.html">Visit Vivec</h1>
+        </header>
+
+        <div class="menubar">
+            <nav class="navbar">
+                <div class="navbar-inner">
+                    <button class="hamburger" id="hamburger">&#9776;</button>
+
+                    <ul class="nav-links" id="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="history.html">History</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="environment.html">Environment</a></li>
+                        <li><a href="newsletter.html">Newsletter</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                </div>
+        </div>
+        </nav>
+    </div>
+
+    <main>
+        <div class="elder-scrolls-table-wrapper">
+            <div class="jQueryGlossaryContent">
+                <h3 class="homeheading3">
+                    Jquery Glossary
+                </h3>
+                <table class="elder-scrolls-table">
+                    <tbody class="glossary-section">
+
+                        <!-- === Form / Control Methods === -->
+                        
+                        <tr class="collapsible-header open">
+                            <td colspan="3">Form / Control Methods</td>
+                        </tr>
+                        
+                        <tr>
+                            <th>Method</th>
+                            <th>Description</th>
+                            <th>Example</th>
+                        </tr>
+                        
+                        <tr>
+                            <td>val()</td>
+                            <td>Gets or sets the value of form elements.</td>
+                            <td><code>$('#name').val();</code> or <code>$('#name').val('John');</code></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>text()</td>
+                            <td>Gets or sets the text content of elements.</td>
+                            <td><code>$('#msg').text('Welcome');</code></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>next()</td>
+                            <td>Selects the next sibling element.</td>
+                            <td><code>$('#input1').next().focus();</code></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>submit()</td>
+                            <td>Triggers or listens to form submission.</td>
+                            <td><code>$('#form').submit(function(e) { e.preventDefault(); });</code></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>focus()</td>
+                            <td>Sets focus or binds a focus event to an element.</td>
+                            <td><code>$('#email').focus();</code></td>
+                        </tr>
+                    </tbody>
+
+                    <!-- === Traversal / Manipulation Methods === -->
+                    <tbody class="glossary-section">
+                        
+                        <tr class="collapsible-header open">
+                            <td colspan="3">Traversal / Manipulation Methods</td>
+                        </tr>
+
+                        <tr>
+                            <th>Method</th>
+                            <th>Description</th>
+                            <th>Example</th>
+                        </tr>
+                        
+                        <tr>
+                            <td>prev()</td>
+                            <td>Selects the previous sibling element.</td>
+                            <td><code>$('#input2').prev().hide();</code></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>find()</td>
+                            <td>Finds descendant elements matching a selector.</td>
+                            <td><code>$('#form').find('input');</code></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>attr()</td>
+                            <td>Gets or sets attributes of elements.</td>
+                            <td><code>$('img').attr('src', 'new.jpg');</code></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>css()</td>
+                            <td>Gets or sets CSS properties.</td>
+                            <td><code>$('#box').css('background-color', 'blue');</code></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>addClass()</td>
+                            <td>Adds a class to selected elements.</td>
+                            <td><code>$('.nav').addClass('active');</code></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>removeClass()</td>
+                            <td>Removes a class from elements.</td>
+                            <td><code>$('.item').removeClass('hidden');</code></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>toggleClass()</td>
+                            <td>Toggles class on or off.</td>
+                            <td><code>$('#menu').toggleClass('open');</code></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>html()</td>
+                            <td>Gets or sets HTML content of elements.</td>
+                            <td><code>$('#msg').html('&lt;b&gt;Success!&lt;/b&gt;');</code></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>hide()</td>
+                            <td>Hides selected elements.</td>
+                            <td><code>$('.modal').hide();</code></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>show()</td>
+                            <td>Shows hidden elements.</td>
+                            <td><code>$('#dropdown').show();</code></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>each()</td>
+                            <td>Iterates through each matched element.</td>
+                            <td>
+                                <code>
+                                    $('li').each(function(i) {<br>
+                                    &nbsp;&nbsp;console.log($(this).text());<br>
+                                    });
+                                </code>
+                            </td>
+                        </tr>
+                    </tbody>
+
+                    <!-- === Event Methods === -->
+
+                    <tbody class="glossary-section">
+                       
+                        <tr class="collapsible-header open">
+                            <td colspan="3">Event Methods</td>
+                        </tr>
+                        
+                        <tr>
+                            <th>Method</th>
+                            <th>Description</th>
+                            <th>Example</th>
+                        </tr>
+                        
+                        <tr>
+                            <td>ready()</td>
+                            <td>Executes code after DOM is loaded.</td>
+                            <td>
+                                <code>
+                                    $(document).ready(function() {<br>
+                                    &nbsp;&nbsp;console.log('DOM Ready');<br>
+                                     });
+                                </code>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>click()</td>
+                            <td>Binds a function to click event.</td>
+                            <td><code>$('#btn').click(function() { alert('Clicked!'); });</code></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>mouseover()</td>
+                            <td>Triggers when mouse enters element.</td>
+                            <td><code>$('#box').mouseover(function() { ... });</code></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>hover()</td>
+                            <td>Handles mouseenter and mouseleave.</td>
+                            <td>
+                                <code>
+                                    $('#item').hover(<br>
+                                    &nbsp;&nbsp;function() { $(this).addClass('hover'); },<br>
+                                    &nbsp;&nbsp;function() { $(this).removeClass('hover'); }<br>
+                                    );
+                                </code>
+                            </td>
+                        </tr>
+                    </tbody>
+                    
+                    <!-- === Animation Methods === -->
+                    
+                    <tbody class="glossary-section">
+                        
+                        <tr class="collapsible-header open">
+                            <td colspan="3">Animation Methods</td>
+                        </tr>
+                        
+                        <tr>
+                            <th>Method</th>
+                            <th>Description</th>
+                            <th>Example</th>
+                        </tr>
+                        
+                        <tr>
+                            <td>animate()</td>
+                            <td>Performs custom animation using CSS properties.</td>
+                            <td><code>$('#box').animate({ left: '200px' }, 1000);</code></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>delay()</td>
+                            <td>Delays the next item in the queue.</td>
+                            <td><code>$('#box').delay(500).fadeIn();</code></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>stop()</td>
+                            <td>Stops the currently running animation.</td>
+                            <td><code>$('#box').stop();</code></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>finish()</td>
+                            <td>Stops animation and jumps to end state.</td>
+                            <td><code>$('#box').finish();</code></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+    </main>
+
+    <footer>
+       (Fake) Copyright &copy; 2025 Visit Vivec
+        <br />
+        <a href="jqueryglossary.html">Jquery Glossary</a>
+        <a href="sourcesCited.html">Sources Cited</a>
+    </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.min.js"
+        integrity="sha256-AlTido85uXPlSyyaZNsjJXeCs07eSv3r43kyCVc8ChI=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

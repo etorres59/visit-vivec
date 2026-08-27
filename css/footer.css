@@ -1,0 +1,30 @@
+/*
+Evan Torres
+Seminole State 
+COP 2381 Advanced Javascript
+Rebekah Gabel
+*/
+
+/* === footer.css === */
+footer {
+  background-color: #1e1e1eab;
+  color: #f5f5dc;
+  font-family: "IM Fell English SC", serif;
+  font-size: 16px;
+  text-align: center;
+  padding: 20px 10px;
+  border-top: 2px solid #8c7835;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  /* ensures it stays on top */
+}
+
+footer p {
+  margin: 0;
+  font-style: italic;
+
+}

@@ -1,0 +1,95 @@
+<!-- 
+Evan Torres
+Seminole State 
+COP 2381 Advanced Javascript
+Rebekah Gabel 
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale= 1.0" />
+    <meta name="description" content="Keep up to date with all of the Vivec City News." />
+    <meta name="keywords" content="Elder Scrolls, Morrowind, Vivec, City, VisitVivec, TES, TES3, newsletter" />
+    <meta name="author" content="Evan Torres" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Visit Vivec</title>
+    <link rel="stylesheet" type="text/css" href="css/header.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/footer.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Uncial+Antiqua&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <h1 a href="index.html">Visit Vivec</h1>
+        </header>
+
+        <div class="menubar">
+            <nav class="navbar">
+                <div class="navbar-inner">
+                    <button class="hamburger" id="hamburger">&#9776;</button>
+
+                    <ul class="nav-links" id="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="history.html">History</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="environment.html">Environment</a></li>
+                        <li><a href="newsletter.html">Newsletter</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                </div>
+        </div>
+        </nav>
+    </div>
+
+    <main>
+        <div class="elder-scrolls-form-wrapper">
+               <h1>Please Join Our Email List</h1>
+               <p>You'll get all the lastest news about Vivec City and access to special offers!</p>
+        <form id="newsletter-form" name="newsletter-form" 
+              novalidate>
+            <div class="form-piece">
+                <label for="email_1">Email Address:</label>
+                <input type="text" id="email_1" name="email_1">
+                <span>&nbsp;</span>
+            </div>
+            
+            <div  class="form-piece">
+                <label for="email_2">Confirm Email Address:</label>
+                <input type="text" id="email_2" name="email_2">
+
+                <span>&nbsp;</span>
+            </div>
+            
+            <div  class="form-piece">
+                <label for="first_name">First Name:</label>
+                <input type="text" id="first_name" name="first_name">
+                <span>&nbsp;</span>
+            </div>
+            <div  class="form-piece">
+                <input type="submit" class="button" id="join_list" value="Join List">
+            </div>     
+        </form>    
+        </div>
+    </main>
+
+    <footer>
+        (Fake) Copyright &copy; 2025 Visit Vivec
+        <br />
+        <a href="jqueryglossary.html">Jquery Glossary</a>
+        <a href="sourcesCited.html">Sources Cited</a>
+    </footer>
+    </div>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.min.js"
+        integrity="sha256-AlTido85uXPlSyyaZNsjJXeCs07eSv3r43kyCVc8ChI=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
