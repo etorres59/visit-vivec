@@ -194,27 +194,30 @@ $(document).ready(function () {
 });
 
 // === Environment JS Object ===
-const environment = {
-    location: "Vivec City is located in the Ascadian Isles region of Morrowind.",
-    weather: "Hot and humid during the day, cooler at night.",
-    description: "The city is built on water, with cantons rising from the lake like massive stone blocks. The surrounding land features ashy plains from Red Mountain, coastal waters, and volcanic rock formations."
-};
+const locationEl = document.getElementById("location"); // location element in the HTML
 
-// Injecting data into each respective div
-document.getElementById("location").innerHTML = `<p><strong>📍 Location:</strong> ${environment.location}</p>`;
-document.getElementById("weather").innerHTML = `<p><strong>🌤 Weather:</strong> ${environment.weather}</p>`;
-document.getElementById("climate").innerHTML = `<p><strong>🌍 Environment Description:</strong> ${environment.description}</p>`;
+if (locationEl){ //check if the location element exists
+    const environment = {
+        location: "Vivec City is located in the Ascadian Isles region of Morrowind.",
+        weather: "Hot and humid during the day, cooler at night.",
+        description: "The city is built on water, with cantons rising from the lake like massive stone blocks. The surrounding land features ashy plains from Red Mountain, coastal waters, and volcanic rock formations."
+    };
+    
+    // Injecting data into each respective div
+    locationEl.innerHTML = `<p><strong>📍 Location:</strong> ${environment.location}</p>`;
+    document.getElementById("weather").innerHTML = `<p><strong>🌤 Weather:</strong> ${environment.weather}</p>`;
+    document.getElementById("climate").innerHTML = `<p><strong>🌍 Environment Description:</strong> ${environment.description}</p>`;
 
 // Optional: Center and style the text
-["location", "weather", "climate"].forEach(id => {
-    const div = document.getElementById(id);
-    div.style.textAlign = "center";
-    div.style.margin = "20px auto";
-    div.style.padding = "0 20px";          // Adds space inside on left/right
-    div.style.maxWidth = "600px";
-    div.style.fontSize = "1.1rem";
-
-});
+    ["location", "weather", "climate"].forEach(id => {
+        const div = document.getElementById(id);
+        div.style.textAlign = "center";
+        div.style.margin = "20px auto";
+        div.style.padding = "0 20px";          // Adds space inside on left/right
+        div.style.maxWidth = "600px";
+        div.style.fontSize = "1.1rem";
+    });
+}
 
 // === History Timelime Tabs ===
 
