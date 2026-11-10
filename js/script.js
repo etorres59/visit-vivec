@@ -144,8 +144,9 @@ $(document).ready(function () {
 });
 // === Contact DatePicker ===
 $(function () {
-    if ($("#datepicker").length)
+    if ($("#datepicker").length) {
         $("#datepicker").datepicker();
+    }
 });
 
 
