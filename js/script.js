@@ -259,11 +259,6 @@ document.addEventListener('keydown', function (e) {
 
 //Events
 $(document).ready(function () {
-    // Mobile hamburger menu
-    $('#hamburger').click(function () {
-        $('#nav-links').toggleClass('active');
-    });
-
     // Event card hover effects
     $('.event-card').hover(
         function () {
@@ -304,25 +299,5 @@ $(document).ready(function () {
                 $(this).addClass('in-view');
             }
         });
-    });
-});
-
-// SOURCES CITED
-
-$(document).ready(function () {
-    // Mobile hamburger menu
-    $('#hamburger').click(function () {
-        $('#nav-links').toggleClass('active');
-    });
-
-    // Smooth scroll for navigation
-    $('a[href^="#"]').click(function (e) {
-        e.preventDefault();
-        const target = $(this.getAttribute('href'));
-        if (target.length) {
-            $('html, body').animate({
-                scrollTop: target.offset().top - 100
-            }, 500);
-        }
     });
 });
