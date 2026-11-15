@@ -129,7 +129,8 @@ h5 {
     background-color: #1e1e1e;
 }
 
-.homeheading3 {
+.homeheading1,
+.homeheading2 {
     font-size: 20px;
     text-transform: uppercase;
     color: #d4af37;

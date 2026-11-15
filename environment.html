@@ -4,273 +4,347 @@ Seminole State
 COP 2381 Advanced Javascript
 Rebekah Gabel 
 -->
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale= 1.0" />
-    <meta name="description" content="Explore the environmentsurrounding the city." />
-    <meta name="keywords" content="Elder Scrolls, Morrowind, Vivec, City, VisitVivec, TES, TES3, environment, Flora, Fauna" />
+    <meta
+      name="description"
+      content="Explore the environmentsurrounding the city."
+    />
+    <meta
+      name="keywords"
+      content="Elder Scrolls, Morrowind, Vivec, City, VisitVivec, TES, TES3, environment, Flora, Fauna"
+    />
     <meta name="author" content="Evan Torres" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Visit Vivec</title>
     <link rel="stylesheet" type="text/css" href="css/header.css" />
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <link rel="stylesheet" type="text/css" href="css/footer.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Uncial+Antiqua&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Uncial+Antiqua&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <div class="wrapper">
-        <header>
-            <h1 a href="index.html">Visit Vivec</h1>
-        </header>
+      <header>
+        <h1><a href="index.html">Visit Vivec</a></h1>
+      </header>
 
-        <div class="menubar">
-            <nav class="navbar">
-                <div class="navbar-inner">
-                    <button class="hamburger" id="hamburger">&#9776;</button>
+      <div class="menubar">
+        <nav class="navbar">
+          <div class="navbar-inner">
+            <button class="hamburger" id="hamburger">&#9776;</button>
 
-                    <ul class="nav-links" id="nav-links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="history.html">History</a></li>
-                        <li><a href="events.html">Events</a></li>
-                        <li><a href="environment.html">Environment</a></li>
-                        <li><a href="newsletter.html">Newsletter</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                </div>
-        </div>
+            <ul class="nav-links" id="nav-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="history.html">History</a></li>
+              <li><a href="events.html">Events</a></li>
+              <li><a href="environment.html">Environment</a></li>
+              <li><a href="newsletter.html">Newsletter</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
         </nav>
+      </div>
     </div>
+
     <main>
-        <section id="env-info">
-            <h2>About Vivec's Environment</h2>
-            <div class="env-img-container">
-                <img class="env-img"
-                    src="images/Vivec_-_Map_-_Morrowind.jpg"
-                    alt="Map of Morrowind showing an arrow pointing at Vivec City" />
-                <p class="env-img-credit">Credit: Elderscrolls.fandom.com, By AgentOfMara</p>
-            </div>
-            <div id="location"></div>
-            <div id="weather"></div>
-            <div id="climate"></div>
-        </section>
+      <section id="env-info">
+        <h2>About Vivec's Environment</h2>
         <div class="env-img-container">
-                <img class="env-img"
-                    src="images/Bal_Foyen_5.jpg"
-                    alt="Map of Morrowind showing an arrow pointing at Vivec City" />
-                <p class="env-img-credit">Credit: Elderscrolls.fandom.com, By CarloV3r</p>
-            </div>
-        <section id="morrowind-wildlife">
-            <h2 style="text-align: center;">Morrowind's Local Flora & Fauna</h2>
-            <p style="text-align: center;">Get aquainted with some of the local wildlife of Morrowind!</p>
+          <img
+            class="env-img"
+            src="images/Vivec_-_Map_-_Morrowind.jpg"
+            alt="Map of Morrowind showing an arrow pointing at Vivec City"
+          />
+          <p class="env-img-credit">
+            Credit: Elderscrolls.fandom.com, By AgentOfMara
+          </p>
+        </div>
+        <div id="location"></div>
+        <div id="weather"></div>
+        <div id="climate"></div>
+      </section>
+      <div class="env-img-container">
+        <img
+          class="env-img"
+          src="images/Bal_Foyen_5.jpg"
+          alt="Map of Morrowind showing an arrow pointing at Vivec City"
+        />
+        <p class="env-img-credit">
+          Credit: Elderscrolls.fandom.com, By CarloV3r
+        </p>
+      </div>
+      <section id="morrowind-wildlife">
+        <h2 style="text-align: center">Morrowind's Local Flora & Fauna</h2>
+        <p style="text-align: center">
+          Get aquainted with some of the local wildlife of Morrowind!
+        </p>
 
-            <h3>FAUNA</h3>
-            <table class="env-table">
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Image</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Guar</td>
-                        <td>Domesticated lizard-like creature used as a pack animal.</td>
-                        <td><img src="images/Golden_Eye_Guar_ESO.jpg"
-                                alt="Guar" />
-                            <p>Credit: Elderscrolls.fandom.com, By Cheatcodechamp</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Kagouti</td>
-                        <td>A hostile two-legged beast with a boar-like head and tusks.</td>
-                        <td><img src="images/Kagouti_Morrowind.jpg"
-                                alt="Kagouti" />
-                            <p>Credit: Elderscrolls.fandom.com, By EbonySkyrim</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Cliff Racer</td>
-                        <td>Flying nuisance creature known for attacking in swarms.</td>
-                        <td><img src="images/Cliff_Racer_Morrowind.jpg"
-                                alt="Cliff Racer" />
-                            <p>Credit: Elderscrolls.fandom.com, By EbonySkyrim</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Alit</td>
-                        <td>A large, reptilian predator with a powerful bite.</td>
-                        <td><img src="images/Alit_Morrowind.jpg"
-                                alt="Alit" />
-                            <p>Credit: Elderscrolls.fandom.com, By EbonySkyrim</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Nix-Hound</td>
-                        <td>Insect-like hunter with long legs and a proboscis snout.</td>
-                        <td><img src="images/Nix-Hound_Morrowind.jpg"
-                                alt="Nix-Hound" />
-                            <p>Credit: Elderscrolls.fandom.com, By EbonySkyrim</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Scrib</td>
-                        <td>Larval form of the Kwama; non-hostile and slow-moving.</td>
-                        <td><img src="https://static.wikia.nocookie.net/elderscrolls/images/7/77/Scrib_%28Morrowind%29.png/revision/latest/scale-to-width-down/1000?cb=20131001212237"
-                                alt="Scrib" />
-                            <p>Credit: Elderscrolls.fandom.com, By EbonySkyrim</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Kwama Forager</td>
-                        <td>Scout of Kwama colonies; small and aggressive.</td>
-                        <td><img src="https://static.wikia.nocookie.net/elderscrolls/images/d/db/Kwama_Forager.png/revision/latest/scale-to-width-down/1000?cb=20131001212237"
-                                alt="Kwama Forager" />
-                            <p>Credit: Elderscrolls.fandom.com, By EbonySkyrim</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Shalk</td>
-                        <td>Insect with a fiery bite and resistant shell.</td>
-                        <td><img src="https://static.wikia.nocookie.net/elderscrolls/images/4/42/Shalk_-_Morrowind.png/revision/latest?cb=20160708181939"
-                                alt="Shalk" />
-                            <p>Credit: Elderscrolls.fandom.com, By AgentOfMara</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Mudcrab</td>
-                        <td>Small coastal creature that ambushes travelers.</td>
-                        <td><img src="https://static.wikia.nocookie.net/elderscrolls/images/c/c2/Mudcrab_%28Morrowind%29.png/revision/latest/scale-to-width-down/1000?cb=20131005220233g"
-                                alt="Mudcrab" />
-                            <p>Credit: Elderscrolls.fandom.com, By EbonySkyrim</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Rat</td>
-                        <td>Common nuisance found in cities and caves.</td>
-                        <td><img src="https://static.wikia.nocookie.net/elderscrolls/images/2/21/Rat_%28Morrowind%29.png/revision/latest/scale-to-width-down/1000?cb=20131117221907"
-                                alt="Rat" />
-                            <p>Credit: Elderscrolls.fandom.com, By EbonySkyrim</p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+        <h3>FAUNA</h3>
+        <table class="env-table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Description</th>
+              <th>Image</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Guar</td>
+              <td>Domesticated lizard-like creature used as a pack animal.</td>
+              <td>
+                <img src="images/Golden_Eye_Guar_ESO.jpg" alt="Guar" />
+                <p>Credit: Elderscrolls.fandom.com, By Cheatcodechamp</p>
+              </td>
+            </tr>
+            <tr>
+              <td>Kagouti</td>
+              <td>
+                A hostile two-legged beast with a boar-like head and tusks.
+              </td>
+              <td>
+                <img src="images/Kagouti_Morrowind.jpg" alt="Kagouti" />
+                <p>Credit: Elderscrolls.fandom.com, By EbonySkyrim</p>
+              </td>
+            </tr>
+            <tr>
+              <td>Cliff Racer</td>
+              <td>Flying nuisance creature known for attacking in swarms.</td>
+              <td>
+                <img src="images/Cliff_Racer_Morrowind.jpg" alt="Cliff Racer" />
+                <p>Credit: Elderscrolls.fandom.com, By EbonySkyrim</p>
+              </td>
+            </tr>
+            <tr>
+              <td>Alit</td>
+              <td>A large, reptilian predator with a powerful bite.</td>
+              <td>
+                <img src="images/Alit_Morrowind.jpg" alt="Alit" />
+                <p>Credit: Elderscrolls.fandom.com, By EbonySkyrim</p>
+              </td>
+            </tr>
+            <tr>
+              <td>Nix-Hound</td>
+              <td>Insect-like hunter with long legs and a proboscis snout.</td>
+              <td>
+                <img src="images/Nix-Hound_Morrowind.jpg" alt="Nix-Hound" />
+                <p>Credit: Elderscrolls.fandom.com, By EbonySkyrim</p>
+              </td>
+            </tr>
+            <tr>
+              <td>Scrib</td>
+              <td>Larval form of the Kwama; non-hostile and slow-moving.</td>
+              <td>
+                <img
+                  src="https://static.wikia.nocookie.net/elderscrolls/images/7/77/Scrib_%28Morrowind%29.png/revision/latest/scale-to-width-down/1000?cb=20131001212237"
+                  alt="Scrib"
+                />
+                <p>Credit: Elderscrolls.fandom.com, By EbonySkyrim</p>
+              </td>
+            </tr>
+            <tr>
+              <td>Kwama Forager</td>
+              <td>Scout of Kwama colonies; small and aggressive.</td>
+              <td>
+                <img
+                  src="https://static.wikia.nocookie.net/elderscrolls/images/d/db/Kwama_Forager.png/revision/latest/scale-to-width-down/1000?cb=20131001212237"
+                  alt="Kwama Forager"
+                />
+                <p>Credit: Elderscrolls.fandom.com, By EbonySkyrim</p>
+              </td>
+            </tr>
+            <tr>
+              <td>Shalk</td>
+              <td>Insect with a fiery bite and resistant shell.</td>
+              <td>
+                <img
+                  src="https://static.wikia.nocookie.net/elderscrolls/images/4/42/Shalk_-_Morrowind.png/revision/latest?cb=20160708181939"
+                  alt="Shalk"
+                />
+                <p>Credit: Elderscrolls.fandom.com, By AgentOfMara</p>
+              </td>
+            </tr>
+            <tr>
+              <td>Mudcrab</td>
+              <td>Small coastal creature that ambushes travelers.</td>
+              <td>
+                <img
+                  src="https://static.wikia.nocookie.net/elderscrolls/images/c/c2/Mudcrab_%28Morrowind%29.png/revision/latest/scale-to-width-down/1000?cb=20131005220233g"
+                  alt="Mudcrab"
+                />
+                <p>Credit: Elderscrolls.fandom.com, By EbonySkyrim</p>
+              </td>
+            </tr>
+            <tr>
+              <td>Rat</td>
+              <td>Common nuisance found in cities and caves.</td>
+              <td>
+                <img
+                  src="https://static.wikia.nocookie.net/elderscrolls/images/2/21/Rat_%28Morrowind%29.png/revision/latest/scale-to-width-down/1000?cb=20131117221907"
+                  alt="Rat"
+                />
+                <p>Credit: Elderscrolls.fandom.com, By EbonySkyrim</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
 
-            <h3>FLORA</h3>
-            <table class="env-table">
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Image</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Marshmerrow</td>
-                        <td>A fibrous plant used in food and textile production.</td>
-                        <td><img src="https://static.wikia.nocookie.net/elderscrolls/images/5/56/Marshmerrow.png/revision/latest/scale-to-width-down/1000?cb=20131006093130"
-                                alt="Marshmerrow" />
-                            <p>Credit: Elderscrolls.fandom.com, By EbonySkyrim</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Saltrice</td>
-                        <td>Common edible plant grown in the Ascadian Isles.</td>
-                        <td><img src="https://static.wikia.nocookie.net/elderscrolls/images/4/43/Saltrice.png/revision/latest/scale-to-width-down/1000?cb=20131012114626"
-                                alt="Saltrice" />
-                            <p>Credit: Elderscrolls.fandom.com, By EbonySkyrim</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Hackle-Lo Leaf</td>
-                        <td>Used in cooking and alchemy; mildly narcotic.</td>
-                        <td><img src="https://static.wikia.nocookie.net/elderscrolls/images/6/6b/Hackle-Lo_Leaf.png/revision/latest/scale-to-width-down/1000?cb=20131124153648"
-                                alt="Hackle-Lo Leaf" />
-                            <p>Credit: Elderscrolls.fandom.com, By EbonySkyrim</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Gold Kanet</td>
-                        <td>Bright yellow flowering plant, valued for dyes.</td>
-                        <td><img src="https://static.wikia.nocookie.net/elderscrolls/images/f/fa/Gold_Kanet.png/revision/latest/scale-to-width-down/1000?cb=20131001195847"
-                                alt="Gold Kanet" />
-                            <p>Credit: Elderscrolls.fandom.com, By EbonySkyrim</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Heather</td>
-                        <td>Low-growing bush with pink flowers, used in potions.</td>
-                        <td><img src="https://static.wikia.nocookie.net/elderscrolls/images/4/46/Heather.png/revision/latest?cb=20220209163143"
-                                alt="Heather" />
-                            <p>Credit: Elderscrolls.fandom.com, By Rupuzioks</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Comberry</td>
-                        <td>Sweet berries used in brandy and potions.</td>
-                        <td><img src="https://static.wikia.nocookie.net/elderscrolls/images/0/0d/Comberry.png/revision/latest/scale-to-width-down/1000?cb=20131006093131"
-                                alt="Comberry" />
-                            <p>Credit: Elderscrolls.fandom.com, By EbonySkyrim</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Scathecraw</td>
-                        <td>Sharp, red-leaved plant that grows in the Ashlands.</td>
-                        <td><img src="https://static.wikia.nocookie.net/elderscrolls/images/e/e3/Scathecraw_%28Morrowind%29.jpg/revision/latest?cb=20130326104922"
-                                alt="Scathecraw" />
-                            <p>Credit: Elderscrolls.fandom.com, ByKool Khajiit</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Draggle Tail</td>
-                        <td>The immature state of the fruiting body of the primitive draggle-tail plant of the Bitter
-                            Coast is called the ampoule pod.</td>
-                        <td><img src="https://static.wikia.nocookie.net/elderscrolls/images/a/ac/Draggle_Tail.png/revision/latest/scale-to-width-down/1000?cb=20131005220233"
-                                alt="Draggle Tail" />
-                            <p>Credit: Elderscrolls.fandom.com, By EbonySkyrim</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Black Anther</td>
-                        <td>It has multiple leaves, and the tips of the petals are violet, while the middle part shines
-                            with a light yellow.</td>
-                        <td><img src="https://static.wikia.nocookie.net/elderscrolls/images/7/78/Black_Anther.png/revision/latest/scale-to-width-down/1000?cb=20131001182917"
-                                alt="Black Anther" />
-                            <p>Credit: Elderscrolls.fandom.com, By EbonySkyrim</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Willow Flower</td>
-                        <td>Willow anther is the powdery residue from pollen-bearing parts of the willow flower.</td>
-                        <td><img src="https://static.wikia.nocookie.net/elderscrolls/images/3/38/Willow_Flower.png/revision/latest/scale-to-width-down/1000?cb=20131001195831"
-                                alt="Willow Flower" />
-                            <p>Credit: Elderscrolls.fandom.com, By EbonySkyrim</p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+        <h3>FLORA</h3>
+        <table class="env-table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Description</th>
+              <th>Image</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Marshmerrow</td>
+              <td>A fibrous plant used in food and textile production.</td>
+              <td>
+                <img
+                  src="https://static.wikia.nocookie.net/elderscrolls/images/5/56/Marshmerrow.png/revision/latest/scale-to-width-down/1000?cb=20131006093130"
+                  alt="Marshmerrow"
+                />
+                <p>Credit: Elderscrolls.fandom.com, By EbonySkyrim</p>
+              </td>
+            </tr>
+            <tr>
+              <td>Saltrice</td>
+              <td>Common edible plant grown in the Ascadian Isles.</td>
+              <td>
+                <img
+                  src="https://static.wikia.nocookie.net/elderscrolls/images/4/43/Saltrice.png/revision/latest/scale-to-width-down/1000?cb=20131012114626"
+                  alt="Saltrice"
+                />
+                <p>Credit: Elderscrolls.fandom.com, By EbonySkyrim</p>
+              </td>
+            </tr>
+            <tr>
+              <td>Hackle-Lo Leaf</td>
+              <td>Used in cooking and alchemy; mildly narcotic.</td>
+              <td>
+                <img
+                  src="https://static.wikia.nocookie.net/elderscrolls/images/6/6b/Hackle-Lo_Leaf.png/revision/latest/scale-to-width-down/1000?cb=20131124153648"
+                  alt="Hackle-Lo Leaf"
+                />
+                <p>Credit: Elderscrolls.fandom.com, By EbonySkyrim</p>
+              </td>
+            </tr>
+            <tr>
+              <td>Gold Kanet</td>
+              <td>Bright yellow flowering plant, valued for dyes.</td>
+              <td>
+                <img
+                  src="https://static.wikia.nocookie.net/elderscrolls/images/f/fa/Gold_Kanet.png/revision/latest/scale-to-width-down/1000?cb=20131001195847"
+                  alt="Gold Kanet"
+                />
+                <p>Credit: Elderscrolls.fandom.com, By EbonySkyrim</p>
+              </td>
+            </tr>
+            <tr>
+              <td>Heather</td>
+              <td>Low-growing bush with pink flowers, used in potions.</td>
+              <td>
+                <img
+                  src="https://static.wikia.nocookie.net/elderscrolls/images/4/46/Heather.png/revision/latest?cb=20220209163143"
+                  alt="Heather"
+                />
+                <p>Credit: Elderscrolls.fandom.com, By Rupuzioks</p>
+              </td>
+            </tr>
+            <tr>
+              <td>Comberry</td>
+              <td>Sweet berries used in brandy and potions.</td>
+              <td>
+                <img
+                  src="https://static.wikia.nocookie.net/elderscrolls/images/0/0d/Comberry.png/revision/latest/scale-to-width-down/1000?cb=20131006093131"
+                  alt="Comberry"
+                />
+                <p>Credit: Elderscrolls.fandom.com, By EbonySkyrim</p>
+              </td>
+            </tr>
+            <tr>
+              <td>Scathecraw</td>
+              <td>Sharp, red-leaved plant that grows in the Ashlands.</td>
+              <td>
+                <img
+                  src="https://static.wikia.nocookie.net/elderscrolls/images/e/e3/Scathecraw_%28Morrowind%29.jpg/revision/latest?cb=20130326104922"
+                  alt="Scathecraw"
+                />
+                <p>Credit: Elderscrolls.fandom.com, ByKool Khajiit</p>
+              </td>
+            </tr>
+            <tr>
+              <td>Draggle Tail</td>
+              <td>
+                The immature state of the fruiting body of the primitive
+                draggle-tail plant of the Bitter Coast is called the ampoule
+                pod.
+              </td>
+              <td>
+                <img
+                  src="https://static.wikia.nocookie.net/elderscrolls/images/a/ac/Draggle_Tail.png/revision/latest/scale-to-width-down/1000?cb=20131005220233"
+                  alt="Draggle Tail"
+                />
+                <p>Credit: Elderscrolls.fandom.com, By EbonySkyrim</p>
+              </td>
+            </tr>
+            <tr>
+              <td>Black Anther</td>
+              <td>
+                It has multiple leaves, and the tips of the petals are violet,
+                while the middle part shines with a light yellow.
+              </td>
+              <td>
+                <img
+                  src="https://static.wikia.nocookie.net/elderscrolls/images/7/78/Black_Anther.png/revision/latest/scale-to-width-down/1000?cb=20131001182917"
+                  alt="Black Anther"
+                />
+                <p>Credit: Elderscrolls.fandom.com, By EbonySkyrim</p>
+              </td>
+            </tr>
+            <tr>
+              <td>Willow Flower</td>
+              <td>
+                Willow anther is the powdery residue from pollen-bearing parts
+                of the willow flower.
+              </td>
+              <td>
+                <img
+                  src="https://static.wikia.nocookie.net/elderscrolls/images/3/38/Willow_Flower.png/revision/latest/scale-to-width-down/1000?cb=20131001195831"
+                  alt="Willow Flower"
+                />
+                <p>Credit: Elderscrolls.fandom.com, By EbonySkyrim</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
     </main>
 
     <footer>
-        (Fake) Copyright &copy; 2025 Visit Vivec
-        <br />
-        <a href="jqueryglossary.html">Jquery Glossary</a>
-        <a href="sourcesCited.html">Sources Cited</a>
+      (Fake) Copyright &copy; 2025 Visit Vivec
+      <br />
+      <a href="jqueryglossary.html">Jquery Glossary</a>
+      <a href="sourcesCited.html">Sources Cited</a>
     </footer>
-    </div>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.min.js"
-        integrity="sha256-AlTido85uXPlSyyaZNsjJXeCs07eSv3r43kyCVc8ChI=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/ui/1.14.1/jquery-ui.min.js"
+      integrity="sha256-AlTido85uXPlSyyaZNsjJXeCs07eSv3r43kyCVc8ChI="
+      crossorigin="anonymous"
+    ></script>
     <script src="js/script.js"></script>
-</body>
-
+  </body>
 </html>

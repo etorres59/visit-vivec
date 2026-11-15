@@ -4,251 +4,290 @@ Seminole State
 COP 2381 Advanced Javascript
 Rebekah Gabel 
 -->
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale= 1.0" />
     <meta name="description" content="The history and culture of Vivec city" />
-    <meta name="keywords" content="Elder Scrolls, Morrowind, Vivec, City, VisitVivec, TES, TES3, History" />
+    <meta
+      name="keywords"
+      content="Elder Scrolls, Morrowind, Vivec, City, VisitVivec, TES, TES3, History"
+    />
     <meta name="author" content="Evan Torres" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Visit Vivec</title>
     <link rel="stylesheet" type="text/css" href="css/header.css" />
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <link rel="stylesheet" type="text/css" href="css/footer.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Uncial+Antiqua&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Uncial+Antiqua&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <div class="wrapper">
-        <header>
-            <h1 a href="index.html">Visit Vivec</h1>
-        </header>
+      <header>
+        <h1><a href="index.html">Visit Vivec</a></h1>
+      </header>
 
-        <div class="menubar">
-            <nav class="navbar">
-                <div class="navbar-inner">
-                    <button class="hamburger" id="hamburger">&#9776;</button>
+      <div class="menubar">
+        <nav class="navbar">
+          <div class="navbar-inner">
+            <button class="hamburger" id="hamburger">&#9776;</button>
 
-                    <ul class="nav-links" id="nav-links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="history.html">History</a></li>
-                        <li><a href="events.html">Events</a></li>
-                        <li><a href="environment.html">Environment</a></li>
-                        <li><a href="newsletter.html">Newsletter</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                </div>
-        </div>
+            <ul class="nav-links" id="nav-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="history.html">History</a></li>
+              <li><a href="events.html">Events</a></li>
+              <li><a href="environment.html">Environment</a></li>
+              <li><a href="newsletter.html">Newsletter</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
         </nav>
+      </div>
     </div>
 
     <main>
-    <div class="container">
+      <div class="container">
         <h1>The History of Vivec City</h1>
         <p class="subtitle">A Timeline Through the Ages of Tamriel</p>
-        
+
         <div class="tabs-container">
-            <!-- Tab Navigation -->
-            <div class="tab-nav">
-                <button class="tab-button active" onclick="showTab(0)">Mythic Era / Early Merethic Era</button>
-                <button class="tab-button" onclick="showTab(1)">1E 668</button>
-                <button class="tab-button" onclick="showTab(2)">Early Second Era (~2E 200s)</button>
-                <button class="tab-button" onclick="showTab(3)">2E 582</button>
-                <button class="tab-button" onclick="showTab(4)">Late 2nd Era – Early 3rd Era</button>
-                <button class="tab-button" onclick="showTab(5)">3E 427</button>
-                <button class="tab-button" onclick="showTab(6)">4E 5</button>
+          <!-- Tab Navigation -->
+          <div class="tab-nav">
+            <button class="tab-button active" onclick="showTab(0)">
+              Mythic Era / Early Merethic Era
+            </button>
+            <button class="tab-button" onclick="showTab(1)">1E 668</button>
+            <button class="tab-button" onclick="showTab(2)">
+              Early Second Era (~2E 200s)
+            </button>
+            <button class="tab-button" onclick="showTab(3)">2E 582</button>
+            <button class="tab-button" onclick="showTab(4)">
+              Late 2nd Era – Early 3rd Era
+            </button>
+            <button class="tab-button" onclick="showTab(5)">3E 427</button>
+            <button class="tab-button" onclick="showTab(6)">4E 5</button>
+          </div>
+
+          <!-- Tab Content -->
+          <div class="tab-content">
+            <div class="tab-panel active" id="panel-0">
+              <h2>Founding of Vivec City (Mythic roots)</h2>
+              <p>
+                According to Vivec's 36 Lessons, the city's origin is tied to
+                mythic events during the era of Resdaynia — an ancient name for
+                Morrowind before the Tribunal rose to power. The founding occurs
+                sometime after the Chimer settled Morrowind but before the First
+                Era.
+              </p>
             </div>
 
-            <!-- Tab Content -->
-            <div class="tab-content">
-                <div class="tab-panel active" id="panel-0">
-                    <h4>Founding of Vivec City (Mythic roots)</h4>
-                    <p>According to Vivec's 36 Lessons, the city's origin is tied to mythic events during the era of Resdaynia — an ancient name for Morrowind before the Tribunal rose to power. The founding occurs sometime after the Chimer settled Morrowind but before the First Era.</p>
-                </div>
-
-                <div class="tab-panel" id="panel-1">
-                    <h4>Red Mountain Eruption</h4>
-                    <p>The first major eruption of Red Mountain reshaped much of Vvardenfell. It is sometime after this that Morrowind gained its current name and the Tribunal consolidated power.</p>
-                </div>
-
-                <div class="tab-panel" id="panel-2">
-                    <h4>Construction of Vivec City as Tribunal Center</h4>
-                    <p>Vivec City was built around the Ministry of Truth and the Palace of Vivec, becoming a spiritual, political, and economic capital of Vvardenfell under Tribunal Temple control.</p>
-                </div>
-
-                <div class="tab-panel" id="panel-3">
-                    <h4>ESO</h4>
-                    <p>During this time, Vivec still ruled from his palace. The city was bustling with commerce, pilgrims, and politics. The Redoran, Hlaalu, and Telvanni Cantons held administrative centers and noble estates. A mysterious affliction affected Vivec's divine powers, which the Vestige helped investigate and resolve.</p>
-                </div>
-
-                <div class="tab-panel" id="panel-4">
-                    <h4>Jiub Becomes a Saint</h4>
-                    <p>Jiub, the famed Dunmer who eliminated 76 cliff racers, was granted sainthood by Vivec himself in a public ceremony at the Palace of Vivec—possibly one of the last recorded audiences with the god before his disappearance.</p>
-                </div>
-
-                <div class="tab-panel" id="panel-5">
-                    <h4>TES 3</h4>
-                    <p>By this time, the Tribunal's power wanes, and Vivec remains the only active member. The Nerevarine visits Vivec City and gains audience with Lord Vivec. The city serves as a central hub for quests, faction politics, and religious pilgrimage.</p>
-                </div>
-
-                <div class="tab-panel" id="panel-6">
-                    <h4>Vivec's Disappearance & Collapse of the Ministry of Truth</h4>
-                    <p>After the Oblivion Crisis and the Tribunal's fall, Vivec disappears. Without his divine will holding it in place, the Ministry of Truth (a suspended moon-like rock) crashes into the city. While some sources claim the Daedric Prince Baar Dau was redirected or destroyed, much of Vivec City was devastated. This event helped trigger the Red Year (eruption of Red Mountain in 4E 5), reshaping Vvardenfell and Morrowind entirely.</p>
-                </div>
+            <div class="tab-panel" id="panel-1">
+              <h2>Red Mountain Eruption</h2>
+              <p>
+                The first major eruption of Red Mountain reshaped much of
+                Vvardenfell. It is sometime after this that Morrowind gained its
+                current name and the Tribunal consolidated power.
+              </p>
             </div>
+
+            <div class="tab-panel" id="panel-2">
+              <h2>Construction of Vivec City as Tribunal Center</h2>
+              <p>
+                Vivec City was built around the Ministry of Truth and the Palace
+                of Vivec, becoming a spiritual, political, and economic capital
+                of Vvardenfell under Tribunal Temple control.
+              </p>
+            </div>
+
+            <div class="tab-panel" id="panel-3">
+              <h2>ESO</h2>
+              <p>
+                During this time, Vivec still ruled from his palace. The city
+                was bustling with commerce, pilgrims, and politics. The Redoran,
+                Hlaalu, and Telvanni Cantons held administrative centers and
+                noble estates. A mysterious affliction affected Vivec's divine
+                powers, which the Vestige helped investigate and resolve.
+              </p>
+            </div>
+
+            <div class="tab-panel" id="panel-4">
+              <h2>Jiub Becomes a Saint</h2>
+              <p>
+                Jiub, the famed Dunmer who eliminated 76 cliff racers, was
+                granted sainthood by Vivec himself in a public ceremony at the
+                Palace of Vivec—possibly one of the last recorded audiences with
+                the god before his disappearance.
+              </p>
+            </div>
+
+            <div class="tab-panel" id="panel-5">
+              <h2>TES 3</h2>
+              <p>
+                By this time, the Tribunal's power wanes, and Vivec remains the
+                only active member. The Nerevarine visits Vivec City and gains
+                audience with Lord Vivec. The city serves as a central hub for
+                quests, faction politics, and religious pilgrimage.
+              </p>
+            </div>
+
+            <div class="tab-panel" id="panel-6">
+              <h2>Vivec's Disappearance & Collapse of the Ministry of Truth</h2>
+              <p>
+                After the Oblivion Crisis and the Tribunal's fall, Vivec
+                disappears. Without his divine will holding it in place, the
+                Ministry of Truth (a suspended moon-like rock) crashes into the
+                city. While some sources claim the Daedric Prince Baar Dau was
+                redirected or destroyed, much of Vivec City was devastated. This
+                event helped trigger the Red Year (eruption of Red Mountain in
+                4E 5), reshaping Vvardenfell and Morrowind entirely.
+              </p>
+            </div>
+          </div>
         </div>
-    </div>
+      </div>
 
+      <section id="culture">
+        <h2>Culture</h2>
+        <p>
+          Morrowind is home to three main cultural groups: the Dunmer Great
+          Houses, the Ashlanders, and the Imperials. The Ashlanders are nomadic,
+          living in small, portable yurts. The Imperials, being more recent
+          settlers, construct towns like Pelagiad with western-style homes,
+          stone forts, and organized city layouts. Despite these influences, the
+          Dunmer Great Houses remain culturally dominant, each preserving
+          distinct traditions, architecture, and societal structures rooted in
+          centuries of history.
+        </p>
+        <p>
+          Vivec City, once a shining example of Dunmeri urban civilization, was
+          a thriving metropolis that embodied religious devotion, architectural
+          ingenuity, and cosmopolitan commerce. Its layout consisted of massive
+          cantons—self-contained districts rising from Norvayn Bay—each
+          dedicated to a Great House, saint, or social function. Saint Delyn and
+          Saint Olms Cantons were the population centers, housing commoners in
+          exterior apartments while merchants and craftspeople worked inside.
+          These cantons hosted guild halls for brewers, fishmongers,
+          glassworkers, potters, tailors, tanners, and miners, who collectively
+          defined the island’s local industries. For example, the rust funnelcap
+          paint used across the island was crafted in Vivec by grinding
+          funnelcap mushrooms into a potent paste.
+        </p>
+        <p>
+          Transportation was largely aquatic, with small gondolas ferrying
+          passengers between cantons via an intricate network of canals. Larger
+          vessels and silt striders arrived at the North Landing. The city was
+          also home to the Arena Canton, a major cultural venue that hosted
+          gladiatorial combat, theatrical performances, and city-wide events.
+          The famed local team, the Vivec City Cliff Racers, once competed in
+          the pan-Tamrielic Dragon Games, further cementing the city's place in
+          popular entertainment.
+        </p>
+        <p>
+          The Great House cantons—Hlaalu, Redoran, and Telvanni—functioned as
+          powerful centers of political and economic activity. Each housed its
+          own administrative offices, treasuries, and court cells. House
+          Redoran's canton was home to noble clans like the Dralor and Saren
+          families. House Telvanni, ever eccentric, rented their compound from
+          the Temple, populating it with traditional Velothi towers instead of
+          mushroom towers. The upper levels offered magical services, while the
+          lower levels held monsters and slaves—reflecting their controversial
+          practices.
+        </p>
+        <p>
+          Vivec City was also notable for its degree of multiculturalism, rare
+          in a land typically suspicious of outlanders. The Foreign Quarter,
+          located at the city’s northern edge, housed traders, visitors, and
+          Imperial agents. It even featured the Foreign Quarter Tomb—an
+          expansive burial site for non-Dunmer, which was uncommon in more
+          provincial areas of Morrowind. Meanwhile, the Hlaalu Compound included
+          ancestral vaults, likely serving ceremonial or burial purposes for
+          House Hlaalu elites.
+        </p>
+        <p>
+          Religious devotion was ever-present. Pilgrims journeyed to the city to
+          visit the High Fane, offer prayers at the Palace of Vivec, or marvel
+          at the suspended meteor Baar Dau—also known as the Ministry of Truth.
+          Access to Vivec himself was rare, reserved for only the most devout.
+          Legend holds that Jiub, famed for slaying seventy-six cliff racers,
+          was among the last to be granted an audience before the god
+          mysteriously vanished.
+        </p>
+      </section>
 
-        <section id="culture">
-            <h1>Culture</h1>
-            <p>
-                Morrowind is home to three main cultural groups: the Dunmer Great Houses, the Ashlanders, and the
-                Imperials.
-                The Ashlanders are nomadic, living in small, portable yurts. The Imperials, being more recent
-                settlers,
-                construct towns like Pelagiad with western-style homes, stone forts, and organized city layouts.
-                Despite
-                these
-                influences, the Dunmer Great Houses remain culturally dominant, each preserving distinct traditions,
-                architecture, and societal structures rooted in centuries of history.
-            </p>
-            <p>
-                Vivec City, once a shining example of Dunmeri urban civilization, was a thriving metropolis that
-                embodied
-                religious devotion, architectural ingenuity, and cosmopolitan commerce. Its layout consisted of
-                massive
-                cantons—self-contained districts rising from Norvayn Bay—each dedicated to a Great House, saint, or
-                social
-                function. Saint Delyn and Saint Olms Cantons were the population centers, housing commoners in
-                exterior
-                apartments while merchants and craftspeople worked inside. These cantons hosted guild halls for
-                brewers,
-                fishmongers, glassworkers, potters, tailors, tanners, and miners, who collectively defined the
-                island’s
-                local
-                industries. For example, the rust funnelcap paint used across the island was crafted in Vivec by
-                grinding
-                funnelcap mushrooms into a potent paste.
-            </p>
-            <p>
-                Transportation was largely aquatic, with small gondolas ferrying passengers between cantons via an
-                intricate
-                network of canals. Larger vessels and silt striders arrived at the North Landing. The city was also
-                home
-                to the
-                Arena Canton, a major cultural venue that hosted gladiatorial combat, theatrical performances, and
-                city-wide
-                events. The famed local team, the Vivec City Cliff Racers, once competed in the pan-Tamrielic Dragon
-                Games,
-                further cementing the city's place in popular entertainment.
-            </p>
-            <p>
-                The Great House cantons—Hlaalu, Redoran, and Telvanni—functioned as powerful centers of political
-                and
-                economic
-                activity. Each housed its own administrative offices, treasuries, and court cells. House Redoran's
-                canton was
-                home to noble clans like the Dralor and Saren families. House Telvanni, ever eccentric, rented their
-                compound
-                from the Temple, populating it with traditional Velothi towers instead of mushroom towers. The upper
-                levels
-                offered magical services, while the lower levels held monsters and slaves—reflecting their
-                controversial
-                practices.
-            </p>
-            <p>
-                Vivec City was also notable for its degree of multiculturalism, rare in a land typically suspicious
-                of
-                outlanders. The Foreign Quarter, located at the city’s northern edge, housed traders, visitors, and
-                Imperial
-                agents. It even featured the Foreign Quarter Tomb—an expansive burial site for non-Dunmer, which was
-                uncommon in
-                more provincial areas of Morrowind. Meanwhile, the Hlaalu Compound included ancestral vaults, likely
-                serving
-                ceremonial or burial purposes for House Hlaalu elites.
-            </p>
-            <p>
-                Religious devotion was ever-present. Pilgrims journeyed to the city to visit the High Fane, offer
-                prayers at the
-                Palace of Vivec, or marvel at the suspended meteor Baar Dau—also known as the Ministry of Truth.
-                Access
-                to Vivec
-                himself was rare, reserved for only the most devout. Legend holds that Jiub, famed for slaying
-                seventy-six cliff
-                racers, was among the last to be granted an audience before the god mysteriously vanished.
-            </p>
-        </section>
+      <h2>Religion</h2>
+      <section id="daedra-worship">
+        <h2>Daedra Worship</h2>
+        <p>
+          Originally, the Chimer worshiped several Daedric Princes after being
+          led to Morrowind by Veloth and Boethiah. Azura, Boethiah, and
+          Mephala—known as the "Good Daedra"—were especially revered. They
+          influenced philosophy, politics, and culture, including the foundation
+          of the Great House system. Other Daedra like Malacath, Molag Bal,
+          Mehrunes Dagon, and Sheogorath were seen as dangerous but important
+          testing figures.
+        </p>
+      </section>
 
+      <section id="tribunal-troubles">
+        <h3>The Tribunal and House of Troubles</h3>
+        <p>
+          When the Tribunal—Almalexia, Vivec, and Sotha Sil—rose to godhood,
+          worship of the Daedra was suppressed. The Good Daedra were rebranded
+          as the "Anticipations" of the Tribunal, while the more chaotic Daedra
+          became the "House of Troubles." These figures were cast as tempters
+          and challenges, especially to discourage traditional Daedra worship
+          among the settled Dunmer.
+        </p>
+      </section>
 
-        <h1>Religion</h1>
-        <section id="daedra-worship">
-            <h2>Daedra Worship</h2>
-            <p>Originally, the Chimer worshiped several Daedric Princes after being led to Morrowind by Veloth and
-                Boethiah. Azura, Boethiah, and Mephala—known as the "Good Daedra"—were especially revered. They
-                influenced philosophy, politics, and culture, including the foundation of the Great House system.
-                Other
-                Daedra like Malacath, Molag Bal, Mehrunes Dagon, and Sheogorath were seen as dangerous but important
-                testing figures.</p>
-        </section>
+      <section id="tribunal-temple">
+        <h3>Tribunal Temple</h3>
+        <p>
+          The Tribunal Temple centered worship on the living gods: Almalexia,
+          Vivec, and Sotha Sil, known together as ALMSIVI. Each had patron
+          roles: Almalexia for healers, Vivec for artists and warriors, and
+          Sotha Sil for inventors and mages. Their acts, like stopping Baar Dau
+          or banishing Mehrunes Dagon, helped solidify their place in Dunmer
+          society as protectors and spiritual leaders.
+        </p>
+      </section>
 
-        <section id="tribunal-troubles">
-            <h2>The Tribunal and House of Troubles</h2>
-            <p>When the Tribunal—Almalexia, Vivec, and Sotha Sil—rose to godhood, worship of the Daedra was
-                suppressed.
-                The Good Daedra were rebranded as the "Anticipations" of the Tribunal, while the more chaotic Daedra
-                became the "House of Troubles." These figures were cast as tempters and challenges, especially to
-                discourage traditional Daedra worship among the settled Dunmer.</p>
-        </section>
+      <section id="fall-of-tribunal">
+        <h3>Fall of the Tribunal</h3>
+        <p>
+          After the Nerevarine destroyed the enchantments tied to the Heart of
+          Lorkhan, the Tribunal’s power faded. Almalexia, driven mad by her loss
+          of divinity, killed Sotha Sil and was in turn killed by the
+          Nerevarine. Vivec eventually disappeared, with his fate left unknown.
+        </p>
+      </section>
 
-        <section id="tribunal-temple">
-            <h2>Tribunal Temple</h2>
-            <p>The Tribunal Temple centered worship on the living gods: Almalexia, Vivec, and Sotha Sil, known
-                together
-                as ALMSIVI. Each had patron roles: Almalexia for healers, Vivec for artists and warriors, and Sotha
-                Sil
-                for inventors and mages. Their acts, like stopping Baar Dau or banishing Mehrunes Dagon, helped
-                solidify
-                their place in Dunmer society as protectors and spiritual leaders.</p>
-        </section>
-
-        <section id="fall-of-tribunal">
-            <h2>Fall of the Tribunal</h2>
-            <p>After the Nerevarine destroyed the enchantments tied to the Heart of Lorkhan, the Tribunal’s power
-                faded.
-                Almalexia, driven mad by her loss of divinity, killed Sotha Sil and was in turn killed by the
-                Nerevarine. Vivec eventually disappeared, with his fate left unknown.</p>
-        </section>
-
-        <section id="reclamations">
-            <h2>The Reclamations</h2>
-            <p>Following the catastrophic Red Year, the Dunmer lost faith in the Tribunal. A religious shift led by
-                the
-                Dissident Priests restored worship of Azura, Boethiah, and Mephala. These Daedra became known as the
-                Reclamations, while the Tribunal were downgraded to saints. The Ashlanders were honored for
-                preserving
-                this original form of worship.</p>
-        </section>
-
-
-
+      <section id="reclamations">
+        <h3>The Reclamations</h3>
+        <p>
+          Following the catastrophic Red Year, the Dunmer lost faith in the
+          Tribunal. A religious shift led by the Dissident Priests restored
+          worship of Azura, Boethiah, and Mephala. These Daedra became known as
+          the Reclamations, while the Tribunal were downgraded to saints. The
+          Ashlanders were honored for preserving this original form of worship.
+        </p>
+      </section>
     </main>
 
     <footer>
-        (Fake) Copyright &copy; 2025 Visit Vivec
-        <br />
-        <a href="jqueryglossary.html">Jquery Glossary</a>
-        <a href="sourcesCited.html">Sources Cited</a>
+      (Fake) Copyright &copy; 2025 Visit Vivec
+      <br />
+      <a href="jqueryglossary.html">Jquery Glossary</a>
+      <a href="sourcesCited.html">Sources Cited</a>
     </footer>
-    </div>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="js/script.js"></script>
-</body>
-
+  </body>
 </html>

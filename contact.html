@@ -5,113 +5,131 @@ COP 2381 Advanced Javascript
 Rebekah Gabel 
 -->
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale= 1.0" />
-    <meta name="description" content="Contact us to start talking with an agent about booking a trip." />
-    <meta name="keywords" content="Elder Scrolls, Morrowind, Vivec, City, VisitVivec, TES, TES3, contact" />
+    <meta
+      name="description"
+      content="Contact us to start talking with an agent about booking a trip."
+    />
+    <meta
+      name="keywords"
+      content="Elder Scrolls, Morrowind, Vivec, City, VisitVivec, TES, TES3, contact"
+    />
     <meta name="author" content="Evan Torres" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Visit Vivec</title>
     <link rel="stylesheet" type="text/css" href="css/header.css" />
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <link rel="stylesheet" type="text/css" href="css/footer.css" />
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Uncial+Antiqua&display=swap"
-        rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Uncial+Antiqua&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <div class="wrapper">
-        <header>
-            <h1 a href="index.html">Visit Vivec</h1>
-        </header>
+      <header>
+        <h1><a href="index.html">Visit Vivec</a></h1>
+      </header>
 
-        <div class="menubar">
-            <nav class="navbar">
-                <div class="navbar-inner">
-                    <button class="hamburger" id="hamburger">&#9776;</button>
+      <div class="menubar">
+        <nav class="navbar">
+          <div class="navbar-inner">
+            <button class="hamburger" id="hamburger">&#9776;</button>
 
-                    <ul class="nav-links" id="nav-links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="history.html">History</a></li>
-                        <li><a href="events.html">Events</a></li>
-                        <li><a href="environment.html">Environment</a></li>
-                        <li><a href="newsletter.html">Newsletter</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                </div>
-        </div>
+            <ul class="nav-links" id="nav-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="history.html">History</a></li>
+              <li><a href="events.html">Events</a></li>
+              <li><a href="environment.html">Environment</a></li>
+              <li><a href="newsletter.html">Newsletter</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
         </nav>
+      </div>
     </div>
 
     <main>
-        <div class="form-header">
-            <h1>Contact Us</h1>
-            <div class="contact-img">
-                <img src="images/Courier19.jpg"
-                    class="courier-img" alt="A courier NPC from Morrowind." />
-            </div>
-            <div class="citation">
-                <p class="image-citation contact-citation">
-                    Credit:
-                    <a href="https://elderscrolls.fandom.com/wiki/Courier_(Skyrim)" target="_blank" rel="noopener">
-                        elderscrolls.fandom.com, by The Rim of the Sky
-                    </a>
-                </p>
-            </div>
-            <p>Fill out the form below. One of our agents will contact you!</p>
+      <div class="form-header">
+        <h1>Contact Us</h1>
+        <div class="contact-img">
+          <img
+            src="images/Courier19.jpg"
+            class="courier-img"
+            alt="A courier NPC from Morrowind."
+          />
         </div>
-
-        <div class="elder-scrolls-form-wrapper">
-            <form id="contact-form" novalidate>
-                <div class="form-piece">
-                    <label for="form-name">Name:</label>
-                    <input type="text" id="form-name" name="form-name">
-                    <span class="error" id="name-error"></span>
-                </div>
-
-                <div class="form-piece">
-                    <label for="form-email">Email:</label>
-                    <input type="email" id="form-email" name="form-email">
-                    <span class="error" id="email-error"></span>
-                </div>
-
-                <div class="form-piece">
-                    <label for="form-message">Message:</label>
-                    <textarea id="form-message" name="form-message"></textarea>
-                    <span class="error" id="message-error"></span>
-                </div>
-
-                <div class="form-piece">
-                    <label for="date">Trip Start Date:</label>
-                    <p id="date"><input type="text" id="datepicker"></p>
-                    <span class="error" id="message-error"></span>
-                </div>
-
-                <div class="form-piece">
-                    <input class="button submit" type="submit" value="Submit">
-                </div>
-            </form>
+        <div class="citation">
+          <p class="image-citation contact-citation">
+            Credit:
+            <a
+              href="https://elderscrolls.fandom.com/wiki/Courier_(Skyrim)"
+              target="_blank"
+              rel="noopener"
+            >
+              elderscrolls.fandom.com, by The Rim of the Sky
+            </a>
+          </p>
         </div>
+        <p>Fill out the form below. One of our agents will contact you!</p>
+      </div>
+
+      <div class="elder-scrolls-form-wrapper">
+        <form id="contact-form" novalidate>
+          <div class="form-piece">
+            <label for="form-name">Name:</label>
+            <input type="text" id="form-name" name="form-name" />
+            <span class="error" id="name-error"></span>
+          </div>
+
+          <div class="form-piece">
+            <label for="form-email">Email:</label>
+            <input type="email" id="form-email" name="form-email" />
+            <span class="error" id="email-error"></span>
+          </div>
+
+          <div class="form-piece">
+            <label for="form-message">Message:</label>
+            <textarea id="form-message" name="form-message"></textarea>
+            <span class="error" id="message-error"></span>
+          </div>
+
+          <div class="form-piece">
+            <label for="datepicker">Trip Start Date:</label>
+            <p id="date"><input type="text" id="datepicker" /></p>
+            <span class="error" id="date-error"></span>
+          </div>
+
+          <div class="form-piece">
+            <input class="button submit" type="submit" value="Submit" />
+          </div>
+        </form>
+      </div>
     </main>
 
     <footer>
-        (Fake) Copyright &copy; 2025 Visit Vivec
-        <br />
-        <a href="jqueryglossary.html">Jquery Glossary</a>
-        <a href="sourcesCited.html">Sources Cited</a>
+      (Fake) Copyright &copy; 2025 Visit Vivec
+      <br />
+      <a href="jqueryglossary.html">Jquery Glossary</a>
+      <a href="sourcesCited.html">Sources Cited</a>
     </footer>
-    </div>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.min.js"
-        integrity="sha256-AlTido85uXPlSyyaZNsjJXeCs07eSv3r43kyCVc8ChI=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/ui/1.14.1/jquery-ui.min.js"
+      integrity="sha256-AlTido85uXPlSyyaZNsjJXeCs07eSv3r43kyCVc8ChI="
+      crossorigin="anonymous"
+    ></script>
     <script src="js/script.js"></script>
-</body>
-
+  </body>
 </html>

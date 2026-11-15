@@ -38,6 +38,12 @@ Rebekah Gabel
     font-size: clamp(1rem, 5vw, 3rem);
   }
 
+  header h1 a {
+    color: inherit;
+    /* use the h1's gold instead of link blue */
+    text-decoration: none;
+  }
+
   nav {
     text-align: center;
     font-family: "IM Fell English SC", serif;
