@@ -249,11 +249,19 @@ function showTab(index) {
     }
 }
 
-// Keyboard navigation
+// Keyboard navigation (History Timeline Tabs Only): 1-7 keys to switch between tabs
 document.addEventListener('keydown', function (e) {
+    // Not on Historypage, so ignore key presses
+    if (!document.querySelector('.tab-button')) return;
+
+    // Let user type in input fields without triggering tab switch
+    if( e.target.closest('input, textarea, select') ) return;
+
+    // Holding down cmd, alt,ctrl, or shift should not trigger tab switch
+    if (e.metaKey || e.altKey || e.ctrlKey || e.shiftKey || e.optionKey) return;
+
     if (e.key >= '1' && e.key <= '7') {
-        const tabIndex = parseInt(e.key) - 1;
-        showTab(tabIndex);
+        showTab(Number(e.key) - 1);
     }
 });
 
